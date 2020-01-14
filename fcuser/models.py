@@ -10,7 +10,7 @@ class Fcuser(models.Model):
     def __str__(self):
         return self.name
 
-class Meta:
-    db_table = "venduster_fcuser"
-    verbose_name = "벤더스터 사용자"
-    verbose_name_plural = "벤더스터 사용자"
+    class Meta:
+        db_table = "venduster_fcuser"
+        verbose_name = "벤더스터 사용자"
+        verbose_name_plural = "벤더스터 사용자"
